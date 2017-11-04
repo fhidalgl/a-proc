@@ -1,55 +1,43 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY vann "http://vocab.org/vann/" >
-    <!ENTITY dc "http://purl.org/dc/terms/" >
-    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY cc "http://creativecommons.org/ns#" >
-    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY vs "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
-]>
-
-
 <rdf:RDF xmlns="http://purl.org/a-proc#"
      xml:base="http://purl.org/a-proc"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:org="http://www.w3.org/ns/org#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann1="http://purl.org/vocab/vann/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:vann="http://vocab.org/vann/"
      xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:m8g="http://data.europa.eu/m8g/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/terms/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/a-proc">
-        <owl:versionInfo rdf:datatype="&xsd;decimal">1.0</owl:versionInfo>
-        <dc:issued rdf:datatype="&xsd;date">2017-10-02</dc:issued>
-        <dc:modified rdf:datatype="&xsd;date">2017-10-02</dc:modified>
-        <dc:rights></dc:rights>
+        <owl:imports rdf:resource="http://data.europa.eu/m8g/cpov"/>
+        <owl:imports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
+        <owl:imports rdf:resource="http://purl.org/net/p-plan#"/>
+        <owl:imports rdf:resource="http://purl.org/ctic/infraestructuras/organizacion"/>
+        <owl:imports rdf:resource="http://purl.org/vocab/cpsv"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+        <dc:description xml:lang="es">Ontología creada para la representación de procedimientos administrativos</dc:description>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
         <vann:preferredNamespaceUri>http://purl.org/a-proc#</vann:preferredNamespaceUri>
         <vann:preferredNamespacePrefix>a-proc</vann:preferredNamespacePrefix>
-        <dc:title xml:lang="en">Administrative procedures</dc:title>
-        <dc:description xml:lang="en">Ontology created for the representation of administrative procedures</dc:description>
         <rdfs:comment xml:lang="en">Ontology created for the representation of administrative procedures</rdfs:comment>
-        <rdfs:comment xml:lang="es">Ontología creada para la representación de procedimientos administrativos</rdfs:comment>
-        <dc:description xml:lang="es">Ontología creada para la representación de procedimientos administrativos</dc:description>
-        <dc:title xml:lang="es">Procedimientos administrativos</dc:title>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-02</dc:modified>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-02</dc:issued>
         <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:imports rdf:resource="http://data.europa.eu/m8g/cpov"/>
+        <dc:description xml:lang="en">Ontology created for the representation of administrative procedures</dc:description>
+        <dc:title xml:lang="es">Procedimientos administrativos</dc:title>
         <dc:creator rdf:resource="http://purl.org/a-proc#fhidalgl"/>
-        <owl:imports rdf:resource="http://purl.org/ctic/infraestructuras/organizacion"/>
-        <owl:imports rdf:resource="http://purl.org/net/p-plan#"/>
-        <owl:imports rdf:resource="http://purl.org/vocab/cpsv"/>
-        <owl:imports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+        <dc:rights></dc:rights>
+        <rdfs:comment xml:lang="es">Ontología creada para la representación de procedimientos administrativos</rdfs:comment>
+        <dc:title xml:lang="en">Administrative procedures</dc:title>
     </owl:Ontology>
     
 
@@ -67,51 +55,51 @@
 
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
 
-    <owl:AnnotationProperty rdf:about="&vs;term_status"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
-    <owl:AnnotationProperty rdf:about="&skos;inScheme"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
-    <owl:AnnotationProperty rdf:about="&skos;prefLabel">
-        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/familyName -->
 
-    <owl:AnnotationProperty rdf:about="&foaf;familyName"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/familyName"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/givenName -->
 
-    <owl:AnnotationProperty rdf:about="&foaf;givenName"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/givenName"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/holdsAccount -->
 
-    <owl:AnnotationProperty rdf:about="&foaf;holdsAccount"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/holdsAccount"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/mbox -->
 
-    <owl:AnnotationProperty rdf:about="&foaf;mbox"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
-    <owl:AnnotationProperty rdf:about="&foaf;name"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
     
 
 
@@ -126,28 +114,52 @@
     
 
 
-    <!-- http://purl.org/a-proc#destinatario -->
+    <!-- http://purl.org/a-proc#actionType -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#destinatario">
-        <rdfs:label xml:lang="es">destinatario</rdfs:label>
-        <rdfs:comment xml:lang="en">Corresponds to the person or organization to which the exit registration is intended</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#actionType">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativeAction"/>
+        <rdfs:comment xml:lang="es">Tipo de acto administrativo</rdfs:comment>
+        <rdfs:comment xml:lang="en">Type of administrative act</rdfs:comment>
+        <rdfs:label>actionType</rdfs:label>
         <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Corresponde con la persona u organización a quien va destinado el asiento de salida</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#AsientoRegistralSalida"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/a-proc#destino -->
+    <!-- http://purl.org/a-proc#addressee -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#destino">
-        <rdfs:label xml:lang="es">destino</rdfs:label>
-        <rdfs:comment xml:lang="en">Unit of the organization to which the entry registration is directed</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#addressee">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#OutputRegistryAnnotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdfs:comment xml:lang="es">Corresponde con la persona u organización a quien va destinado el asiento de salida</rdfs:comment>
+        <rdfs:comment xml:lang="en">Corresponds to the person or organization to which the exit registration is intended</rdfs:comment>
+        <rdfs:label>addressee</rdfs:label>
         <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Unidad de la organización a quien va dirigido el asiento de entrada</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#AsientoRegistralEntrada"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/a-proc#destination -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#destination">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#InputRegistryAnnotation"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:comment xml:lang="es">Unidad de la organización a quien va dirigido el asiento de entrada</rdfs:comment>
+        <rdfs:comment xml:lang="en">Unit of the organization to which the entry registration is directed</rdfs:comment>
+        <rdfs:label>destination</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/a-proc#distributionType -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#distributionType">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#Distribute"/>
+        <rdfs:comment xml:lang="es">Tipo de distribucion que se realiza sobre el asiento registral</rdfs:comment>
+        <rdfs:comment xml:lang="en">Type of distribution that is made on the registration entry</rdfs:comment>
+        <rdfs:label>distributionType</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -155,88 +167,64 @@
     <!-- http://purl.org/a-proc#hasDocument -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/a-proc#hasDocument">
-        <rdfs:label xml:lang="es">hasDocument</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativeFile"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#RegistryAnnotation"/>
+        <rdfs:range rdf:resource="http://purl.org/a-proc#Document"/>
         <rdfs:comment xml:lang="en">Document belonging to a record or registration</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
         <rdfs:comment xml:lang="es">Documento que pertenece a un expediente o asiento registral</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#AsientoRegistral"/>
-        <rdfs:range rdf:resource="http://purl.org/a-proc#Documento"/>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#Expediente"/>
+        <rdfs:label>hasDocument</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/a-proc#isProcedimientoDeServicio -->
+    <!-- http://purl.org/a-proc#isProcedureOfPublicService -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#isProcedimientoDeServicio">
-        <rdfs:label xml:lang="es">isProcedimientoDeServicio</rdfs:label>
-        <rdfs:comment xml:lang="en">Public service that is resolved by the procedure</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Servicio publico que es resuelto por el procedimiento</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#ProcedimientoAdministrativo"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#isProcedureOfPublicService">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativeProcedure"/>
         <rdfs:range rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:comment xml:lang="en">Public service that is resolved by the procedure</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicio publico que es resuelto por el procedimiento</rdfs:comment>
+        <rdfs:label>isProcedureOfPublicService</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/a-proc#origen -->
+    <!-- http://purl.org/a-proc#origin -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#origen">
-        <rdfs:label xml:lang="es">origen</rdfs:label>
-        <rdfs:comment xml:lang="en">Organization that forwards the entry registration</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Organizacion que remite el asiento de entrada</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#AsientoRegistralSalida"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#origin">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#OutputRegistryAnnotation"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:comment xml:lang="es">Organizacion que remite el asiento de entrada</rdfs:comment>
+        <rdfs:comment xml:lang="en">Organization that forwards the entry registration</rdfs:comment>
+        <rdfs:label>origin</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/a-proc#remitente -->
+    <!-- http://purl.org/a-proc#phaseType -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#remitente">
-        <rdfs:label xml:lang="es">remitente</rdfs:label>
-        <rdfs:comment xml:lang="en">Person or company that sends the registration entry registration</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Persona o empresa que remite el asiento registral del entrada</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#AsientoRegistralEntrada"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/a-proc#tipoActo -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#tipoActo">
-        <rdfs:label xml:lang="es">tipoActo</rdfs:label>
-        <rdfs:comment xml:lang="en">Type of administrative act</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Tipo de acto administrativo</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#ActoAdministrativo"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/a-proc#tipoDistribucion -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#tipoDistribucion">
-        <rdfs:label xml:lang="es">tipoDistribucion</rdfs:label>
-        <rdfs:comment xml:lang="en">Type of distribution that is made on the registration entry</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Tipo de distribucion que se realiza sobre el asiento registral</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#Distribuir"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/a-proc#tipoFase -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#tipoFase">
-        <rdfs:label xml:lang="es">tipoFase</rdfs:label>
-        <rdfs:comment xml:lang="en">Type of Administrative Phase</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Tipo de fase Administrativa</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#phaseType">
         <rdfs:domain rdf:resource="http://purl.org/a-proc#SubProceso"/>
+        <rdfs:comment xml:lang="es">Tipo de fase Administrativa</rdfs:comment>
+        <rdfs:comment xml:lang="en">Type of Administrative Phase</rdfs:comment>
+        <rdfs:label>phaseType</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/a-proc#sender -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/a-proc#sender">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#InputRegistryAnnotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdfs:comment xml:lang="en">Person or company that sends the registration entry registration</rdfs:comment>
+        <rdfs:comment xml:lang="es">Persona o empresa que remite el asiento registral del entrada</rdfs:comment>
+        <rdfs:label>sender</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -252,8 +240,8 @@
     <!-- http://purl.org/net/p-plan#isDecomposedAsPlan -->
 
     <rdf:Description rdf:about="http://purl.org/net/p-plan#isDecomposedAsPlan">
-        <rdfs:range rdf:resource="http://purl.org/a-proc#FaseAdministrativa"/>
         <rdfs:domain rdf:resource="http://purl.org/a-proc#SubProceso"/>
+        <rdfs:range rdf:resource="http://purl.org/a-proc#AdministrativePhase"/>
     </rdf:Description>
     
 
@@ -261,10 +249,10 @@
     <!-- http://purl.org/net/p-plan#isPrecededBy -->
 
     <rdf:Description rdf:about="http://purl.org/net/p-plan#isPrecededBy">
-        <rdfs:range rdf:resource="http://purl.org/a-proc#ActoAdministrativo"/>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#ActoAdministrativo"/>
-        <rdfs:range rdf:resource="http://purl.org/a-proc#SubProceso"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativeAction"/>
         <rdfs:domain rdf:resource="http://purl.org/a-proc#SubProceso"/>
+        <rdfs:range rdf:resource="http://purl.org/a-proc#AdministrativeAction"/>
+        <rdfs:range rdf:resource="http://purl.org/a-proc#SubProceso"/>
     </rdf:Description>
     
 
@@ -272,11 +260,11 @@
     <!-- http://purl.org/net/p-plan#isStepOfPlan -->
 
     <rdf:Description rdf:about="http://purl.org/net/p-plan#isStepOfPlan">
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#ActoAdministrativo"/>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#ActoOrdenacion"/>
-        <rdfs:range rdf:resource="http://purl.org/a-proc#FaseAdministrativa"/>
-        <rdfs:range rdf:resource="http://purl.org/a-proc#ProcedimientoAdministrativo"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativeAction"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#OrdinationAction"/>
         <rdfs:domain rdf:resource="http://purl.org/a-proc#SubProceso"/>
+        <rdfs:range rdf:resource="http://purl.org/a-proc#AdministrativePhase"/>
+        <rdfs:range rdf:resource="http://purl.org/a-proc#AdministrativeProcedure"/>
     </rdf:Description>
     
 
@@ -284,8 +272,8 @@
     <!-- http://purl.org/net/p-plan#isSubPlanOfPlan -->
 
     <rdf:Description rdf:about="http://purl.org/net/p-plan#isSubPlanOfPlan">
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#FaseAdministrativa"/>
-        <rdfs:range rdf:resource="http://purl.org/a-proc#ProcedimientoAdministrativo"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativePhase"/>
+        <rdfs:range rdf:resource="http://purl.org/a-proc#AdministrativeProcedure"/>
     </rdf:Description>
     
 
@@ -293,7 +281,7 @@
     <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#ProcedimientoAdministrativo"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativeProcedure"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
     </rdf:Description>
     
@@ -310,62 +298,43 @@
     
 
 
-    <!-- http://purl.org/a-proc#codigoActo -->
+    <!-- http://purl.org/a-proc#actionId -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#codigoActo">
-        <rdfs:label xml:lang="es">codigoActo</rdfs:label>
-        <rdfs:comment xml:lang="en">Identifier of the administrative act</rdfs:comment>
+    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#actionId">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativeAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">Identificador del acto administrativo</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#ActoAdministrativo"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment xml:lang="en">Identifier of the administrative act</rdfs:comment>
+        <rdfs:label>actionId</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/a-proc#codigoFase -->
+    <!-- http://purl.org/a-proc#administrativeFileId -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#codigoFase">
-        <rdfs:label xml:lang="es">codigoFase</rdfs:label>
-        <rdfs:comment xml:lang="en">Identifier of the administrative phase</rdfs:comment>
-        <rdfs:comment xml:lang="es">Identificador de la fase administrativa</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#FaseAdministrativa"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#administrativeFileId">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativeFile"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#Communication"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#Document"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#DocumentationProvided"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#FileAction"/>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#FilePhase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Identificador del expediente en el sistema</rdfs:comment>
+        <rdfs:comment xml:lang="en">Identifier of the administrative file in the system</rdfs:comment>
+        <rdfs:label>administrativeFileId</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/a-proc#codigoProcedimiento -->
+    <!-- http://purl.org/a-proc#creationFileDate -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#codigoProcedimiento">
-        <rdfs:label xml:lang="es">codgoProcedimiento</rdfs:label>
-        <rdfs:comment xml:lang="en">Identifier of the administrative procedure</rdfs:comment>
-        <rdfs:comment xml:lang="es">Identificador del procedimiento administrativo</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#ProcedimientoAdministrativo"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/a-proc#codigoServicio -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#codigoServicio">
-        <rdfs:label xml:lang="es">codigoServicio</rdfs:label>
-        <rdfs:comment xml:lang="en">Identifier of the procedure or service offered by a Public Administration.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Identificador del procedimiento o servicio ofrecido por una Administración Pública.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/a-proc#fechaAltaExpte -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#fechaAltaExpte">
-        <rdfs:label xml:lang="es">fechaAltaExpte</rdfs:label>
+    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#creationFileDate">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativeFile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">Date on which a record or registration entry is created.</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha en la que se crea un expediente o un asiento registral.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#Expediente"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:label>creationFileDate</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -373,52 +342,71 @@
     <!-- http://purl.org/a-proc#fechaRegistro -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#fechaRegistro">
-        <rdfs:label xml:lang="es">fechaRegistro</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#RegistryAnnotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">Date of the registration entry</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha de la anotacion registral</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#AsientoRegistral"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:label xml:lang="es">fechaRegistro</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/a-proc#numeroExpediente -->
+    <!-- http://purl.org/a-proc#phaseId -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#numeroExpediente">
-        <rdfs:label xml:lang="es">numeroExpediente</rdfs:label>
-        <rdfs:comment xml:lang="en">Identifier of the administrative file in the system</rdfs:comment>
-        <rdfs:comment xml:lang="es">Identificador del expediente en el sistema</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#ActoExpediente"/>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#Comunicacion"/>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#DocumentacionAportada"/>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#Documento"/>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#Expediente"/>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#FaseExpediente"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#phaseId">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativePhase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Identificador de la fase administrativa</rdfs:comment>
+        <rdfs:comment xml:lang="en">Identifier of the administrative phase</rdfs:comment>
+        <rdfs:label>phaseId</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/a-proc#numeroRegistro -->
+    <!-- http://purl.org/a-proc#procedureId -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#numeroRegistro">
-        <rdfs:label xml:lang="es">numeroRegistro</rdfs:label>
-        <rdfs:comment xml:lang="en">Registry identifier</rdfs:comment>
+    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#procedureId">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#AdministrativeProcedure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Identificador del procedimiento administrativo</rdfs:comment>
+        <rdfs:comment xml:lang="en">Identifier of the administrative procedure</rdfs:comment>
+        <rdfs:label>procedureId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/a-proc#publicServiceId -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#publicServiceId">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Identificador del procedimiento o servicio ofrecido por una Administración Pública.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Identifier of the procedure or service offered by a Public Administration.</rdfs:comment>
+        <rdfs:label>publicServiceId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/a-proc#registryAnnotationId -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#registryAnnotationId">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#RegistryAnnotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">Identificador del asiento registral</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#AsientoRegistral"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment xml:lang="en">Registry identifier</rdfs:comment>
+        <rdfs:label>registryAnnotationId</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/a-proc#resumen -->
+    <!-- http://purl.org/a-proc#summary -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#resumen">
-        <rdfs:label xml:lang="es">resumen</rdfs:label>
-        <rdfs:comment xml:lang="en">Summary of the registry office</rdfs:comment>
+    <owl:DatatypeProperty rdf:about="http://purl.org/a-proc#summary">
+        <rdfs:domain rdf:resource="http://purl.org/a-proc#RegistryAnnotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">Resumen del asiento registral</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/a-proc#AsientoRegistral"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:comment xml:lang="en">Summary of the registry office</rdfs:comment>
+        <rdfs:label>summary</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -434,254 +422,254 @@
     
 
 
-    <!-- http://purl.org/a-proc#ActoAdministrativo -->
+    <!-- http://purl.org/a-proc#AdministrativeAction -->
 
-    <owl:Class rdf:about="http://purl.org/a-proc#ActoAdministrativo">
-        <rdfs:label xml:lang="es">ActoAdministrativo</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/a-proc#AdministrativeAction">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Step"/>
         <rdfs:comment xml:lang="en">An administrative act is any unilateral declaration of will performed in the exercise of the administrative function that produces individual legal effects immediately</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
         <rdfs:comment xml:lang="es">Un acto administrativo es toda declaración unilateral de voluntad realizada en el ejercicio de la función administrativa que produce efectos jurídicos individuales de forma inmediata</rdfs:comment>
+        <rdfs:label>AdministrativeAction</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/a-proc#ActoExpediente -->
+    <!-- http://purl.org/a-proc#AdministrativeFile -->
 
-    <owl:Class rdf:about="http://purl.org/a-proc#ActoExpediente">
-        <rdfs:label xml:lang="es">ActoExpediente</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/a-proc#AdministrativeFile">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
-        <rdfs:comment xml:lang="en">Each of the administrative actions carried out in one phase of an administrative file.</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Cada uno de las actuaciones administrativas realizadas en una fase de un expediente. Se corresponde con un ActoAdministrativo.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#ActoOrdenacion -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#ActoOrdenacion">
-        <rdfs:label xml:lang="es">ActoOrdenacion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/a-proc#ActoAdministrativo"/>
-        <rdfs:comment xml:lang="en">It is considered an act of ordination that act that can be instantiated at any time of the processing of a file.</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Se considera un acto de ordenación aquel acto que puede ser instanciado en cualquier momento de la tramitación de un expediente.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#AportarDocumentacion -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#AportarDocumentacion">
-        <rdfs:label xml:lang="es">AportarDocumentacion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
-        <rdfs:comment xml:lang="en">Activity relating to a document submitted by a citizen to an administrative file</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Actividad por la que se relaciona un documento aportado por un ciudadano a un expediente administrativo</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#AsientoRegistral -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#AsientoRegistral">
-        <rdfs:label xml:lang="es">AsientoRegistral</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
-        <rdfs:comment xml:lang="en">Entity consisting of an annotation in the registry book. It can be input or output.</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Entidad que consiste en una anotación en el libro de registro. Puede ser de entrada o de salida.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#AsientoRegistralEntrada -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#AsientoRegistralEntrada">
-        <rdfs:label xml:lang="es">AsientoRegistralEntrada</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/a-proc#AsientoRegistral"/>
-        <rdfs:comment xml:lang="en">Annotation corresponding to the entry of documentation in the organization</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Anotacion correspondiente a la entrada de documentación en la organización</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#AsientoRegistralSalida -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#AsientoRegistralSalida">
-        <rdfs:label xml:lang="es">AsientoRegistralSalida</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/a-proc#AsientoRegistral"/>
-        <rdfs:comment xml:lang="en">Annotation corresponding to the output of documentation in the organization</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Anotacion correspondiente a la salida de documentación en la organización</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#Comunicacion -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#Comunicacion">
-        <rdfs:label xml:lang="es">Comunicacion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
-        <rdfs:comment xml:lang="en">A communication is the procedural procedure by which the competent administrative body informs the interested party or interested in an administrative Resolution or agreement</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Una comunicación es el trámite procedimental mediante el cual el órgano administrativo competente informa al interesado o interesados en una Resolución o acuerdo administrativos</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#CrearExpediente -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#CrearExpediente">
-        <rdfs:label xml:lang="es">CrearExpediente</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
-        <rdfs:comment xml:lang="en">Activity for which a new administrative file is created</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Actividad por la que se genera un nuevo expediente</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#Distribuir -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#Distribuir">
-        <rdfs:label xml:lang="es">Distribuir</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
-        <rdfs:comment xml:lang="en">Activity by which a registration entry is distributed between different registration offices</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Actividad por la que se distribuye un asiento registral entre diferentes oficinas de registro</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#DocumentacionAportada -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#DocumentacionAportada">
-        <rdfs:label xml:lang="es">DocumentacionAportada</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
-        <rdfs:comment xml:lang="en">Each of the documents provided by the citizen at the beginning of the process or in subsequent contributions of documentation.</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Cada uno de los documentos aportados por el ciudadano en el inicio del trámite o en aportaciones posteriores de documentación.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#Documento -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#Documento">
-        <rdfs:label xml:lang="es">Documento</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
-        <rdfs:comment xml:lang="en">Each of the documents generated in the administrative action.</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Cada uno de los documentos generados en la actuación administrativa.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#Expediente -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#Expediente">
-        <rdfs:label xml:lang="es">Expediente</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
-        <rdfs:comment xml:lang="en">It is the materialization of the administrative procedure and consists of the ordered set of documents and actions that serve as background and base the administrative decision, as well as the steps directed at its execution.</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
         <rdfs:comment xml:lang="es">Es la materialización del procedimiento administrativo y que consiste en el conjunto ordenado de documentos y actuaciones que sirven de antecedentes y fundamentan la resolución administrativa, así como las diligencias dirigidas a su ejecución.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the materialization of the administrative procedure and consists of the ordered set of documents and actions that serve as background and base the administrative decision, as well as the steps directed at its execution.</rdfs:comment>
+        <rdfs:label>AdministrativeFile</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/a-proc#FaseAdministrativa -->
+    <!-- http://purl.org/a-proc#AdministrativePhase -->
 
-    <owl:Class rdf:about="http://purl.org/a-proc#FaseAdministrativa">
-        <rdfs:label xml:lang="es">FaseAdministrativa</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/a-proc#AdministrativePhase">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Plan"/>
         <rdfs:comment xml:lang="en">An administrative phase is each of the elements in which it is structured in administrative procedure</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
         <rdfs:comment xml:lang="es">Una fase administrativa es cada uno de los elementos en los que se estructura en procedimiento administrativo</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#FaseExpediente -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#FaseExpediente">
-        <rdfs:label xml:lang="es">FaseExpediente</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
-        <rdfs:comment xml:lang="en">Each of the phases instantiated in an administrative file.</rdfs:comment>
+        <rdfs:label>AdministrativePhase</rdfs:label>
         <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Cada una de las fases instanciadas en un expedientes. Se corresponde con una FaseAdministrativa.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/a-proc#GenerarDocumento -->
+    <!-- http://purl.org/a-proc#AdministrativeProcedure -->
 
-    <owl:Class rdf:about="http://purl.org/a-proc#GenerarDocumento">
-        <rdfs:label xml:lang="es">GenerarDocumento</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
-        <rdfs:comment xml:lang="en">Activity by which a new document is created in an administrative file</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Actividad por la que se crea un nuevo documento en un expediente</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#IniciarActo -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#IniciarActo">
-        <rdfs:label xml:lang="es">IniciarActo</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
-        <rdfs:comment xml:lang="en">Activity by which an administrative act is created in the context of the phase of a file.</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Actividad por la que se crea un acto administrativo en el contexto de la fase de un expediente.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#IniciarFase -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#IniciarFase">
-        <rdfs:label xml:lang="es">IniciarFase</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
-        <rdfs:comment xml:lang="en">Activity by which a new phase is created in the context of an administrative file</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
-        <rdfs:comment xml:lang="es">Actividad por la que se crea una fase en el contexto de un expediente</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/a-proc#ProcedimientoAdministrativo -->
-
-    <owl:Class rdf:about="http://purl.org/a-proc#ProcedimientoAdministrativo">
-        <rdfs:label xml:lang="es">ProcedimientoAdministrativo</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/a-proc#AdministrativeProcedure">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Plan"/>
-        <rdfs:comment xml:lang="en">The ordered set of procedures and actions normally carried out, according to the legally provided channel, to issue an administrative act or express the will of the Administration</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
         <rdfs:comment xml:lang="es">El conjunto ordenado de trámites y actuaciones normalmente realizadas, según el cauce legalmente previsto, para dictar un acto administrativo o expresar la voluntad de la Administración</rdfs:comment>
+        <rdfs:comment xml:lang="en">The ordered set of procedures and actions normally carried out, according to the legally provided channel, to issue an administrative act or express the will of the Administration</rdfs:comment>
+        <rdfs:label>AdministrativeProcedure</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/a-proc#RealizarComunicacion -->
+    <!-- http://purl.org/a-proc#Communication -->
 
-    <owl:Class rdf:about="http://purl.org/a-proc#RealizarComunicacion">
-        <rdfs:label xml:lang="es">RealizarComunicacion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
-        <rdfs:comment xml:lang="en">Activity that creates a communication destined to a citizen.</rdfs:comment>
+    <owl:Class rdf:about="http://purl.org/a-proc#Communication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
+        <rdfs:comment xml:lang="en">A communication is the procedural procedure by which the competent administrative body informs the interested party or interested in an administrative Resolution or agreement</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una comunicación es el trámite procedimental mediante el cual el órgano administrativo competente informa al interesado o interesados en una Resolución o acuerdo administrativos</rdfs:comment>
+        <rdfs:label>Communication</rdfs:label>
         <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#CreateAction -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#CreateAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
+        <rdfs:comment xml:lang="es">Actividad por la que se crea un acto administrativo en el contexto de la fase de un expediente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activity by which an administrative act is created in the context of the phase of a file.</rdfs:comment>
+        <rdfs:label>CreateAction</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#CreateDocument -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#CreateDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
+        <rdfs:comment xml:lang="es">Actividad por la que se crea un nuevo documento en un expediente</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activity by which a new document is created in an administrative file</rdfs:comment>
+        <rdfs:label>CreateDocument</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#CreateFile -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#CreateFile">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
+        <rdfs:comment xml:lang="es">Actividad por la que se genera un nuevo expediente</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activity for which a new administrative file is created</rdfs:comment>
+        <rdfs:label>CreateFile</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#CreatePhase -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#CreatePhase">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
+        <rdfs:comment xml:lang="es">Actividad por la que se crea una fase en el contexto de un expediente</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activity by which a new phase is created in the context of an administrative file</rdfs:comment>
+        <rdfs:label>CreatePhase</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#Distribute -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#Distribute">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
+        <rdfs:comment xml:lang="es">Actividad por la que se distribuye un asiento registral entre diferentes oficinas de registro</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activity by which a registration entry is distributed between different registration offices</rdfs:comment>
+        <rdfs:label>Distribute</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#Document -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#Document">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
+        <rdfs:comment xml:lang="es">Cada uno de los documentos generados en la actuación administrativa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Each of the documents generated in the administrative action.</rdfs:comment>
+        <rdfs:label>Document</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#DocumentationProvided -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#DocumentationProvided">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
+        <rdfs:comment xml:lang="es">Cada uno de los documentos aportados por el ciudadano en el inicio del trámite o en aportaciones posteriores de documentación.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Each of the documents provided by the citizen at the beginning of the process or in subsequent contributions of documentation.</rdfs:comment>
+        <rdfs:label>DocumentationProvided</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#FileAction -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#FileAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
+        <rdfs:comment xml:lang="es">Cada uno de las actuaciones administrativas realizadas en una fase de un expediente. Se corresponde con un ActoAdministrativo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Each of the administrative actions carried out in one phase of an administrative file.</rdfs:comment>
+        <rdfs:label>FileAction</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#FilePhase -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#FilePhase">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
+        <rdfs:comment xml:lang="es">Cada una de las fases instanciadas en un expedientes. Se corresponde con una FaseAdministrativa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Each of the phases instantiated in an administrative file.</rdfs:comment>
+        <rdfs:label>FilePhase</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#InputRegistryAnnotation -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#InputRegistryAnnotation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/a-proc#RegistryAnnotation"/>
+        <rdfs:comment xml:lang="en">Annotation corresponding to the entry of documentation in the organization</rdfs:comment>
+        <rdfs:comment xml:lang="es">Anotacion correspondiente a la entrada de documentación en la organización</rdfs:comment>
+        <rdfs:label>InputRegistryAnnotation</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#OrdinationAction -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#OrdinationAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/a-proc#AdministrativeAction"/>
+        <rdfs:comment xml:lang="en">It is considered an act of ordination that act that can be instantiated at any time of the processing of a file.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Se considera un acto de ordenación aquel acto que puede ser instanciado en cualquier momento de la tramitación de un expediente.</rdfs:comment>
+        <rdfs:label>OrdinationAction</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#OutputRegistryAnnotation -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#OutputRegistryAnnotation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/a-proc#RegistryAnnotation"/>
+        <rdfs:comment xml:lang="en">Annotation corresponding to the output of documentation in the organization</rdfs:comment>
+        <rdfs:comment xml:lang="es">Anotacion correspondiente a la salida de documentación en la organización</rdfs:comment>
+        <rdfs:label>OutputRegistryAnnotation</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#PerformComunication -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#PerformComunication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
         <rdfs:comment xml:lang="es">Actividad por la que se crea una comunicación con destino a un ciudadano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activity that creates a communication destined to a citizen.</rdfs:comment>
+        <rdfs:label>PerformComunication</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/a-proc#Registrar -->
+    <!-- http://purl.org/a-proc#ProvideDocumentation -->
 
-    <owl:Class rdf:about="http://purl.org/a-proc#Registrar">
-        <rdfs:label xml:lang="es">Registrar</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/a-proc#ProvideDocumentation">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
-        <rdfs:comment xml:lang="en">Activity by which a document or request of a citizen is registered giving entrance in the administration</rdfs:comment>
+        <rdfs:comment xml:lang="es">Actividad por la que se relaciona un documento aportado por un ciudadano a un expediente administrativo</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activity relating to a document submitted by a citizen to an administrative file</rdfs:comment>
+        <rdfs:label>ProvideDocumentation</rdfs:label>
         <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#Register -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#Register">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Activity"/>
         <rdfs:comment xml:lang="es">Actividad por la que se registra un documento o solicitud de un ciudadano dando entrada en la administración</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activity by which a document or request of a citizen is registered giving entrance in the administration</rdfs:comment>
+        <rdfs:label>Register</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/a-proc#RegistryAnnotation -->
+
+    <owl:Class rdf:about="http://purl.org/a-proc#RegistryAnnotation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Entity"/>
+        <rdfs:comment xml:lang="es">Entidad que consiste en una anotación en el libro de registro. Puede ser de entrada o de salida.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Entity consisting of an annotation in the registry book. It can be input or output.</rdfs:comment>
+        <rdfs:label>RegistryAnnotation</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:Class>
     
 
@@ -689,11 +677,11 @@
     <!-- http://purl.org/a-proc#SubProceso -->
 
     <owl:Class rdf:about="http://purl.org/a-proc#SubProceso">
-        <rdfs:label xml:lang="es">SubProceso</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#MultiStep"/>
         <rdfs:comment xml:lang="en">A subprocess is used to link a procedure with its phases or a metaprocedure with its procedures.</rdfs:comment>
-        <vs:term_status xml:lang="en">stable</vs:term_status>
         <rdfs:comment xml:lang="es">Un subproceso se utiliza para enlazar un procedimento con sus fases o un metaprocedimiento con sus procedimientos.</rdfs:comment>
+        <rdfs:label xml:lang="es">SubProceso</rdfs:label>
+        <vs:term_status xml:lang="en">stable</vs:term_status>
     </owl:Class>
     
 
@@ -708,25 +696,25 @@
 
     <!-- http://purl.org/vocommons/voaf#Vocabulary -->
 
-    <owl:Class rdf:about="&voaf;Vocabulary"/>
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
-    <owl:Class rdf:about="&skos;Concept"/>
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
-    <owl:Class rdf:about="&skos;ConceptScheme"/>
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
-    <owl:Class rdf:about="&foaf;Person"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
     
 
 
@@ -744,7 +732,7 @@
     <!-- http://purl.org/a-proc -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc">
-        <rdf:type rdf:resource="&voaf;Vocabulary"/>
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
     </owl:NamedIndividual>
     
 
@@ -752,7 +740,7 @@
     <!-- http://purl.org/a-proc#esquemaEstadosDist -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaEstadosDist">
-        <rdf:type rdf:resource="&skos;ConceptScheme"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment xml:lang="es">Taxonomía para los posibles estados de distribución de un asiento registral</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -761,8 +749,8 @@
     <!-- http://purl.org/a-proc#esquemaEstadosDist-1 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaEstadosDist-1">
-        <rdf:type rdf:resource="&skos;Concept"/>
-        <rdfs:label xml:lang="es">Estado distribuido</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Dstribuited</rdfs:label>
         <skos:inScheme rdf:resource="http://purl.org/a-proc#esquemaEstadosDist"/>
     </owl:NamedIndividual>
     
@@ -771,8 +759,8 @@
     <!-- http://purl.org/a-proc#esquemaEstadosDist-2 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaEstadosDist-2">
-        <rdf:type rdf:resource="&skos;Concept"/>
-        <rdfs:label xml:lang="es">Estado aceptado</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Accepted</rdfs:label>
         <skos:inScheme rdf:resource="http://purl.org/a-proc#esquemaEstadosDist"/>
     </owl:NamedIndividual>
     
@@ -781,8 +769,8 @@
     <!-- http://purl.org/a-proc#esquemaTipoActo -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoActo">
-        <rdf:type rdf:resource="&skos;ConceptScheme"/>
-        <rdfs:label xml:lang="es">Taxonomía de los actos de un procedimiento administrativo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:label xml:lang="en">Taxonomy of the actions of an administrative procedure</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -790,8 +778,8 @@
     <!-- http://purl.org/a-proc#esquemaTipoActo-1 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoActo-1">
-        <rdf:type rdf:resource="&skos;Concept"/>
-        <rdfs:label xml:lang="es">Acto de resolución</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Resolution action</rdfs:label>
         <skos:inScheme rdf:resource="http://purl.org/a-proc#esquemaTipoActo"/>
     </owl:NamedIndividual>
     
@@ -800,8 +788,8 @@
     <!-- http://purl.org/a-proc#esquemaTipoActo-2 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoActo-2">
-        <rdf:type rdf:resource="&skos;Concept"/>
-        <rdfs:label xml:lang="es">Propuesta de resolución</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Resolution proposal</rdfs:label>
         <skos:inScheme rdf:resource="http://purl.org/a-proc#esquemaTipoActo"/>
     </owl:NamedIndividual>
     
@@ -810,8 +798,8 @@
     <!-- http://purl.org/a-proc#esquemaTipoActo-3 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoActo-3">
-        <rdf:type rdf:resource="&skos;Concept"/>
-        <rdfs:label xml:lang="es">Notificación</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Notification</rdfs:label>
         <skos:inScheme rdf:resource="http://purl.org/a-proc#esquemaTipoActo"/>
     </owl:NamedIndividual>
     
@@ -820,8 +808,8 @@
     <!-- http://purl.org/a-proc#esquemaTipoDocumento-1 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoDocumento-1">
-        <rdf:type rdf:resource="&skos;Concept"/>
-        <rdfs:label xml:lang="es">Formulario</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Application form</rdfs:label>
         <skos:inScheme rdf:resource="http://purl.org/a-proc#esquemaTipoDocumentoExterno"/>
     </owl:NamedIndividual>
     
@@ -830,7 +818,7 @@
     <!-- http://purl.org/a-proc#esquemaTipoDocumento-2 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoDocumento-2">
-        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <skos:inScheme rdf:resource="http://purl.org/a-proc#esquemaTipoDocumentoExterno"/>
     </owl:NamedIndividual>
     
@@ -839,8 +827,8 @@
     <!-- http://purl.org/a-proc#esquemaTipoDocumentoExterno -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoDocumentoExterno">
-        <rdf:type rdf:resource="&skos;ConceptScheme"/>
-        <rdfs:label xml:lang="es">Taxonomía para los tipos de documento de los ciudadanos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:label xml:lang="en">Taxonomy of the document types from citizens</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -848,8 +836,8 @@
     <!-- http://purl.org/a-proc#esquemaTipoDocumentoInterno -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoDocumentoInterno">
-        <rdf:type rdf:resource="&skos;ConceptScheme"/>
-        <rdfs:label xml:lang="es">Taxonomía para los tipos de documento internos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:label xml:lang="en">Taxonomy of the internal documents of the organization</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -857,8 +845,8 @@
     <!-- http://purl.org/a-proc#esquemaTipoFase -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoFase">
-        <rdf:type rdf:resource="&skos;ConceptScheme"/>
-        <rdfs:label xml:lang="es">Taxonomía de las fases de un procedimiento administrativo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:label xml:lang="en">Taxonomy of the phases of an administrative procedure</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -866,10 +854,10 @@
     <!-- http://purl.org/a-proc#esquemaTipoFase-1 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoFase-1">
-        <rdf:type rdf:resource="&skos;Concept"/>
-        <rdfs:label xml:lang="es">Fase de Inicio</rdfs:label>
-        <skos:prefLabel xml:lang="es">Fase de inicio</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Start phase</rdfs:label>
         <skos:inScheme rdf:resource="http://purl.org/a-proc#esquemaTipoFase"/>
+        <skos:prefLabel xml:lang="en">Start phase</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -877,10 +865,10 @@
     <!-- http://purl.org/a-proc#esquemaTipoFase-2 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#esquemaTipoFase-2">
-        <rdf:type rdf:resource="&skos;Concept"/>
-        <rdfs:label xml:lang="es">Fase de Terminación</rdfs:label>
-        <skos:prefLabel xml:lang="es">Fase de terminación</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Termination phase</rdfs:label>
         <skos:inScheme rdf:resource="http://purl.org/a-proc#esquemaTipoFase"/>
+        <skos:prefLabel xml:lang="en">Termination phase</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -888,12 +876,12 @@
     <!-- http://purl.org/a-proc#fhidalgl -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/a-proc#fhidalgl">
-        <rdf:type rdf:resource="&foaf;Person"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <foaf:familyName>Hidalgo López</foaf:familyName>
-        <foaf:mbox>fhidalgl@gmail.com</foaf:mbox>
         <foaf:givenName>Francisco José</foaf:givenName>
-        <foaf:name>Francisco José Hidalgo López</foaf:name>
         <foaf:holdsAccount rdf:resource="http://purl.org/www.linkedin.com/in/franciscohidalgolopez"/>
+        <foaf:mbox xml:lang="gmail.com">fhidalgl</foaf:mbox>
+        <foaf:name>Francisco José Hidalgo López</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -907,19 +895,19 @@
      -->
 
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/a-proc#ActoExpediente"/>
-            <rdf:Description rdf:about="http://purl.org/a-proc#AsientoRegistral"/>
-            <rdf:Description rdf:about="http://purl.org/a-proc#Comunicacion"/>
-            <rdf:Description rdf:about="http://purl.org/a-proc#DocumentacionAportada"/>
-            <rdf:Description rdf:about="http://purl.org/a-proc#Documento"/>
-            <rdf:Description rdf:about="http://purl.org/a-proc#Expediente"/>
-            <rdf:Description rdf:about="http://purl.org/a-proc#FaseExpediente"/>
+            <rdf:Description rdf:about="http://purl.org/a-proc#AdministrativeFile"/>
+            <rdf:Description rdf:about="http://purl.org/a-proc#Communication"/>
+            <rdf:Description rdf:about="http://purl.org/a-proc#Document"/>
+            <rdf:Description rdf:about="http://purl.org/a-proc#DocumentationProvided"/>
+            <rdf:Description rdf:about="http://purl.org/a-proc#FileAction"/>
+            <rdf:Description rdf:about="http://purl.org/a-proc#FilePhase"/>
+            <rdf:Description rdf:about="http://purl.org/a-proc#RegistryAnnotation"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/a-proc#esquemaEstadosDist"/>
             <rdf:Description rdf:about="http://purl.org/a-proc#esquemaEstadosDist-1"/>
@@ -941,5 +929,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
