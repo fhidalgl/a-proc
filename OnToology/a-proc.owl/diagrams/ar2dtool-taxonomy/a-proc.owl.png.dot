@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:Distribuir" "base:AsientoRegistral" "base:RealizarComunicacion" "base:FaseExpediente" "base:CrearExpediente" "base:Documento" "base:AsientoRegistralSalida" "base:IniciarFase" "base:DocumentacionAportada" "base:ProcedimientoAdministrativo" "base:FaseAdministrativa" "base:ActoExpediente" "base:SubProceso" "base:GenerarDocumento" "base:AsientoRegistralEntrada" "base:Comunicacion" "base:IniciarActo" "base:AportarDocumentacion" "base:Expediente" "base:ActoOrdenacion" "base:Registrar" "base:ActoAdministrativo" "skos:OrderedCollection" "skos:Collection" "p-plan:MultiStep" "p-plan:Activity" "p-plan:Step" "p-plan:Entity" "p-plan:Bundle" "prov:Bundle" "prov:Entity" "p-plan:Plan" "prov:Plan" "prov:Activity" "prov:Influence" "prov:End" "prov:Agent" "prov:Derivation" "prov:Quotation" "prov:Collection" "prov:InstantaneousEvent" "prov:Delegation" "prov:Invalidation" "prov:Usage" "prov:SoftwareAgent" "prov:Attribution" "prov:PrimarySource" "prov:ActivityInfluence" "prov:Organization" "prov:EmptyCollection" "prov:Revision" "prov:Communication" "prov:Association" "prov:Start" "prov:EntityInfluence" "prov:AgentInfluence" "prov:Generation" "prov:Person" "oegov:Facility" "oegov:Center" "oegov:Body" "http://purl.org/ctic/infraestructuras/organizacion#OrganoPublico" "http://purl.org/ctic/infraestructuras/organizacion#EdificioMunicipal" "http://purl.org/ctic/infraestructuras/organizacion#Edificio" "http://purl.org/ctic/infraestructuras/organizacion#CentroServicios" "geonames:Feature" ; /*classes style*/
+node [shape = rectangle, color="black"]; "base:Distribuir" "base:AsientoRegistral" "base:RealizarComunicacion" "base:FaseExpediente" "base:CrearExpediente" "base:Documento" "base:AsientoRegistralSalida" "base:IniciarFase" "base:DocumentacionAportada" "base:ProcedimientoAdministrativo" "base:FaseAdministrativa" "base:ActoExpediente" "base:SubProceso" "base:GenerarDocumento" "base:AsientoRegistralEntrada" "base:Comunicacion" "base:IniciarActo" "base:AportarDocumentacion" "base:Expediente" "base:ActoOrdenacion" "base:Registrar" "base:ActoAdministrativo" "skos:OrderedCollection" "skos:Collection" "p-plan:MultiStep" "p-plan:Activity" "p-plan:Step" "p-plan:Entity" "p-plan:Bundle" "prov:Bundle" "prov:Entity" "p-plan:Plan" "prov:Plan" "prov:Activity" "prov:Influence" "prov:End" "prov:Agent" "prov:Derivation" "prov:Quotation" "prov:Collection" "prov:InstantaneousEvent" "prov:Delegation" "prov:Invalidation" "prov:Usage" "prov:SoftwareAgent" "prov:Attribution" "prov:PrimarySource" "prov:ActivityInfluence" "prov:Organization" "prov:EmptyCollection" "prov:Revision" "prov:Communication" "prov:Association" "prov:Start" "prov:EntityInfluence" "prov:AgentInfluence" "prov:Generation" "prov:Person" ; /*classes style*/
 	"prov:Plan" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
 	"base:FaseAdministrativa" -> "p-plan:Plan" [ label = "rdfs:subClassOf" ];
 	"prov:Invalidation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
@@ -10,8 +10,6 @@ node [shape = rectangle, color="black"]; "base:Distribuir" "base:AsientoRegistra
 	"base:IniciarActo" -> "p-plan:Activity" [ label = "rdfs:subClassOf" ];
 	"prov:Communication" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
 	"prov:ActivityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
-	"http://purl.org/ctic/infraestructuras/organizacion#Edificio" -> "oegov:Facility" [ label = "rdfs:subClassOf" ];
-	"http://purl.org/ctic/infraestructuras/organizacion#Edificio" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
 	"prov:SoftwareAgent" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
 	"base:ActoAdministrativo" -> "p-plan:Step" [ label = "rdfs:subClassOf" ];
 	"prov:PrimarySource" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
@@ -24,7 +22,6 @@ node [shape = rectangle, color="black"]; "base:Distribuir" "base:AsientoRegistra
 	"p-plan:MultiStep" -> "p-plan:Plan" [ label = "rdfs:subClassOf" ];
 	"base:RealizarComunicacion" -> "p-plan:Activity" [ label = "rdfs:subClassOf" ];
 	"prov:Delegation" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
-	"http://purl.org/ctic/infraestructuras/organizacion#OrganoPublico" -> "oegov:Body" [ label = "rdfs:subClassOf" ];
 	"base:AsientoRegistralEntrada" -> "base:AsientoRegistral" [ label = "rdfs:subClassOf" ];
 	"prov:Derivation" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
 	"base:CrearExpediente" -> "p-plan:Activity" [ label = "rdfs:subClassOf" ];
@@ -38,7 +35,6 @@ node [shape = rectangle, color="black"]; "base:Distribuir" "base:AsientoRegistra
 	"base:AsientoRegistral" -> "p-plan:Entity" [ label = "rdfs:subClassOf" ];
 	"prov:Bundle" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
 	"base:DocumentacionAportada" -> "p-plan:Entity" [ label = "rdfs:subClassOf" ];
-	"http://purl.org/ctic/infraestructuras/organizacion#CentroServicios" -> "oegov:Center" [ label = "rdfs:subClassOf" ];
 	"prov:Start" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
 	"prov:Start" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
 	"prov:EmptyCollection" -> "prov:Collection" [ label = "rdfs:subClassOf" ];
@@ -65,7 +61,6 @@ node [shape = rectangle, color="black"]; "base:Distribuir" "base:AsientoRegistra
 	"base:Expediente" -> "p-plan:Entity" [ label = "rdfs:subClassOf" ];
 	"p-plan:Bundle" -> "prov:Bundle" [ label = "rdfs:subClassOf" ];
 	"p-plan:Bundle" -> "p-plan:Entity" [ label = "rdfs:subClassOf" ];
-	"http://purl.org/ctic/infraestructuras/organizacion#EdificioMunicipal" -> "http://purl.org/ctic/infraestructuras/organizacion#Edificio" [ label = "rdfs:subClassOf" ];
 	"base:ActoExpediente" -> "p-plan:Entity" [ label = "rdfs:subClassOf" ];
 
 }
