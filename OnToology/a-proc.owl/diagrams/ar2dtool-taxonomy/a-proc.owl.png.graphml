@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="65" parse.nodes="67" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="60" parse.nodes="59" parse.order="free">
       <node id="nid_prov:Plan">
          <data key="d0">
             <y:ShapeNode>
@@ -250,64 +250,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://purl.org/ctic/infraestructuras/organizacion#Edificio">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="590.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://purl.org/ctic/infraestructuras/organizacion#Edificio</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-      <node id="nid_oegov:Facility">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="140.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">oegov:Facility</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf8" source="nid_http://purl.org/ctic/infraestructuras/organizacion#Edificio" target="nid_oegov:Facility">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_geonames:Feature">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">geonames:Feature</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf9" source="nid_http://purl.org/ctic/infraestructuras/organizacion#Edificio" target="nid_geonames:Feature">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_prov:SoftwareAgent">
          <data key="d0">
             <y:ShapeNode>
@@ -332,7 +274,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf10" source="nid_prov:SoftwareAgent" target="nid_prov:Agent">
+    <edge id="eid_rdfs:subClassOf8" source="nid_prov:SoftwareAgent" target="nid_prov:Agent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -367,7 +309,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf11" source="nid_base:ActoAdministrativo" target="nid_p-plan:Step">
+    <edge id="eid_rdfs:subClassOf9" source="nid_base:ActoAdministrativo" target="nid_p-plan:Step">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -390,7 +332,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf12" source="nid_prov:PrimarySource" target="nid_prov:Derivation">
+    <edge id="eid_rdfs:subClassOf10" source="nid_prov:PrimarySource" target="nid_prov:Derivation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -413,7 +355,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf13" source="nid_p-plan:Entity" target="nid_prov:Entity">
+    <edge id="eid_rdfs:subClassOf11" source="nid_p-plan:Entity" target="nid_prov:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -436,7 +378,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf14" source="nid_http://purl.org/vocab/cpsv#PublicService" target="nid_p-plan:Plan">
+    <edge id="eid_rdfs:subClassOf12" source="nid_http://purl.org/vocab/cpsv#PublicService" target="nid_p-plan:Plan">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -459,7 +401,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf15" source="nid_base:Documento" target="nid_p-plan:Entity">
+    <edge id="eid_rdfs:subClassOf13" source="nid_base:Documento" target="nid_p-plan:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -482,7 +424,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf16" source="nid_base:AportarDocumentacion" target="nid_p-plan:Activity">
+    <edge id="eid_rdfs:subClassOf14" source="nid_base:AportarDocumentacion" target="nid_p-plan:Activity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -517,7 +459,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf17" source="nid_prov:Attribution" target="nid_prov:AgentInfluence">
+    <edge id="eid_rdfs:subClassOf15" source="nid_prov:Attribution" target="nid_prov:AgentInfluence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -540,7 +482,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf18" source="nid_p-plan:MultiStep" target="nid_p-plan:Step">
+    <edge id="eid_rdfs:subClassOf16" source="nid_p-plan:MultiStep" target="nid_p-plan:Step">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -551,7 +493,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf19" source="nid_p-plan:MultiStep" target="nid_p-plan:Plan">
+    <edge id="eid_rdfs:subClassOf17" source="nid_p-plan:MultiStep" target="nid_p-plan:Plan">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -574,7 +516,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf20" source="nid_base:RealizarComunicacion" target="nid_p-plan:Activity">
+    <edge id="eid_rdfs:subClassOf18" source="nid_base:RealizarComunicacion" target="nid_p-plan:Activity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -597,42 +539,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf21" source="nid_prov:Delegation" target="nid_prov:AgentInfluence">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_http://purl.org/ctic/infraestructuras/organizacion#OrganoPublico">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="640.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://purl.org/ctic/infraestructuras/organizacion#OrganoPublico</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-      <node id="nid_oegov:Body">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="100.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">oegov:Body</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf22" source="nid_http://purl.org/ctic/infraestructuras/organizacion#OrganoPublico" target="nid_oegov:Body">
+    <edge id="eid_rdfs:subClassOf19" source="nid_prov:Delegation" target="nid_prov:AgentInfluence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -667,7 +574,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf23" source="nid_base:AsientoRegistralEntrada" target="nid_base:AsientoRegistral">
+    <edge id="eid_rdfs:subClassOf20" source="nid_base:AsientoRegistralEntrada" target="nid_base:AsientoRegistral">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -690,7 +597,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf24" source="nid_prov:Derivation" target="nid_prov:EntityInfluence">
+    <edge id="eid_rdfs:subClassOf21" source="nid_prov:Derivation" target="nid_prov:EntityInfluence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -713,7 +620,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf25" source="nid_base:CrearExpediente" target="nid_p-plan:Activity">
+    <edge id="eid_rdfs:subClassOf22" source="nid_base:CrearExpediente" target="nid_p-plan:Activity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -736,7 +643,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf26" source="nid_prov:Association" target="nid_prov:AgentInfluence">
+    <edge id="eid_rdfs:subClassOf23" source="nid_prov:Association" target="nid_prov:AgentInfluence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -759,7 +666,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf27" source="nid_prov:End" target="nid_prov:EntityInfluence">
+    <edge id="eid_rdfs:subClassOf24" source="nid_prov:End" target="nid_prov:EntityInfluence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -770,7 +677,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf28" source="nid_prov:End" target="nid_prov:InstantaneousEvent">
+    <edge id="eid_rdfs:subClassOf25" source="nid_prov:End" target="nid_prov:InstantaneousEvent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -793,7 +700,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf29" source="nid_prov:Usage" target="nid_prov:InstantaneousEvent">
+    <edge id="eid_rdfs:subClassOf26" source="nid_prov:Usage" target="nid_prov:InstantaneousEvent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -804,7 +711,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf30" source="nid_prov:Usage" target="nid_prov:EntityInfluence">
+    <edge id="eid_rdfs:subClassOf27" source="nid_prov:Usage" target="nid_prov:EntityInfluence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -827,7 +734,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf31" source="nid_prov:Collection" target="nid_prov:Entity">
+    <edge id="eid_rdfs:subClassOf28" source="nid_prov:Collection" target="nid_prov:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -862,7 +769,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf32" source="nid_skos:OrderedCollection" target="nid_skos:Collection">
+    <edge id="eid_rdfs:subClassOf29" source="nid_skos:OrderedCollection" target="nid_skos:Collection">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -873,7 +780,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf33" source="nid_base:AsientoRegistral" target="nid_p-plan:Entity">
+    <edge id="eid_rdfs:subClassOf30" source="nid_base:AsientoRegistral" target="nid_p-plan:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -896,7 +803,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf34" source="nid_prov:Bundle" target="nid_prov:Entity">
+    <edge id="eid_rdfs:subClassOf31" source="nid_prov:Bundle" target="nid_prov:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -919,42 +826,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf35" source="nid_base:DocumentacionAportada" target="nid_p-plan:Entity">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_http://purl.org/ctic/infraestructuras/organizacion#CentroServicios">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="660.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://purl.org/ctic/infraestructuras/organizacion#CentroServicios</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-      <node id="nid_oegov:Center">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">oegov:Center</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf36" source="nid_http://purl.org/ctic/infraestructuras/organizacion#CentroServicios" target="nid_oegov:Center">
+    <edge id="eid_rdfs:subClassOf32" source="nid_base:DocumentacionAportada" target="nid_p-plan:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -977,7 +849,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf37" source="nid_prov:Start" target="nid_prov:EntityInfluence">
+    <edge id="eid_rdfs:subClassOf33" source="nid_prov:Start" target="nid_prov:EntityInfluence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -988,7 +860,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf38" source="nid_prov:Start" target="nid_prov:InstantaneousEvent">
+    <edge id="eid_rdfs:subClassOf34" source="nid_prov:Start" target="nid_prov:InstantaneousEvent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1011,7 +883,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf39" source="nid_prov:EmptyCollection" target="nid_prov:Collection">
+    <edge id="eid_rdfs:subClassOf35" source="nid_prov:EmptyCollection" target="nid_prov:Collection">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1034,7 +906,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf40" source="nid_prov:Revision" target="nid_prov:Derivation">
+    <edge id="eid_rdfs:subClassOf36" source="nid_prov:Revision" target="nid_prov:Derivation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1057,7 +929,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf41" source="nid_p-plan:Activity" target="nid_prov:Activity">
+    <edge id="eid_rdfs:subClassOf37" source="nid_p-plan:Activity" target="nid_prov:Activity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1080,7 +952,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf42" source="nid_prov:Organization" target="nid_prov:Agent">
+    <edge id="eid_rdfs:subClassOf38" source="nid_prov:Organization" target="nid_prov:Agent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1091,7 +963,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf43" source="nid_prov:EntityInfluence" target="nid_prov:Influence">
+    <edge id="eid_rdfs:subClassOf39" source="nid_prov:EntityInfluence" target="nid_prov:Influence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1114,7 +986,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf44" source="nid_base:Comunicacion" target="nid_p-plan:Entity">
+    <edge id="eid_rdfs:subClassOf40" source="nid_base:Comunicacion" target="nid_p-plan:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1137,7 +1009,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf45" source="nid_base:ProcedimientoAdministrativo" target="nid_p-plan:Plan">
+    <edge id="eid_rdfs:subClassOf41" source="nid_base:ProcedimientoAdministrativo" target="nid_p-plan:Plan">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1160,7 +1032,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf46" source="nid_prov:Person" target="nid_prov:Agent">
+    <edge id="eid_rdfs:subClassOf42" source="nid_prov:Person" target="nid_prov:Agent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1183,7 +1055,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf47" source="nid_base:AsientoRegistralSalida" target="nid_base:AsientoRegistral">
+    <edge id="eid_rdfs:subClassOf43" source="nid_base:AsientoRegistralSalida" target="nid_base:AsientoRegistral">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1194,7 +1066,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf48" source="nid_prov:AgentInfluence" target="nid_prov:Influence">
+    <edge id="eid_rdfs:subClassOf44" source="nid_prov:AgentInfluence" target="nid_prov:Influence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1217,7 +1089,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf49" source="nid_base:GenerarDocumento" target="nid_p-plan:Activity">
+    <edge id="eid_rdfs:subClassOf45" source="nid_base:GenerarDocumento" target="nid_p-plan:Activity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1240,7 +1112,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf50" source="nid_base:SubProceso" target="nid_p-plan:MultiStep">
+    <edge id="eid_rdfs:subClassOf46" source="nid_base:SubProceso" target="nid_p-plan:MultiStep">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1263,7 +1135,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf51" source="nid_base:Distribuir" target="nid_p-plan:Activity">
+    <edge id="eid_rdfs:subClassOf47" source="nid_base:Distribuir" target="nid_p-plan:Activity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1286,7 +1158,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf52" source="nid_base:ActoOrdenacion" target="nid_base:ActoAdministrativo">
+    <edge id="eid_rdfs:subClassOf48" source="nid_base:ActoOrdenacion" target="nid_base:ActoAdministrativo">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1309,7 +1181,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf53" source="nid_base:IniciarFase" target="nid_p-plan:Activity">
+    <edge id="eid_rdfs:subClassOf49" source="nid_base:IniciarFase" target="nid_p-plan:Activity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1332,7 +1204,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf54" source="nid_prov:Generation" target="nid_prov:ActivityInfluence">
+    <edge id="eid_rdfs:subClassOf50" source="nid_prov:Generation" target="nid_prov:ActivityInfluence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1343,7 +1215,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf55" source="nid_prov:Generation" target="nid_prov:InstantaneousEvent">
+    <edge id="eid_rdfs:subClassOf51" source="nid_prov:Generation" target="nid_prov:InstantaneousEvent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1366,7 +1238,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf56" source="nid_base:FaseExpediente" target="nid_p-plan:Entity">
+    <edge id="eid_rdfs:subClassOf52" source="nid_base:FaseExpediente" target="nid_p-plan:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1377,7 +1249,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf57" source="nid_p-plan:Plan" target="nid_prov:Plan">
+    <edge id="eid_rdfs:subClassOf53" source="nid_p-plan:Plan" target="nid_prov:Plan">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1388,7 +1260,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf58" source="nid_p-plan:Plan" target="nid_p-plan:Entity">
+    <edge id="eid_rdfs:subClassOf54" source="nid_p-plan:Plan" target="nid_p-plan:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1411,7 +1283,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf59" source="nid_base:Registrar" target="nid_p-plan:Activity">
+    <edge id="eid_rdfs:subClassOf55" source="nid_base:Registrar" target="nid_p-plan:Activity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1434,7 +1306,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf60" source="nid_base:Expediente" target="nid_p-plan:Entity">
+    <edge id="eid_rdfs:subClassOf56" source="nid_base:Expediente" target="nid_p-plan:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1457,7 +1329,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf61" source="nid_p-plan:Bundle" target="nid_prov:Bundle">
+    <edge id="eid_rdfs:subClassOf57" source="nid_p-plan:Bundle" target="nid_prov:Bundle">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1468,30 +1340,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf62" source="nid_p-plan:Bundle" target="nid_p-plan:Entity">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_http://purl.org/ctic/infraestructuras/organizacion#EdificioMunicipal">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="680.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://purl.org/ctic/infraestructuras/organizacion#EdificioMunicipal</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf63" source="nid_http://purl.org/ctic/infraestructuras/organizacion#EdificioMunicipal" target="nid_http://purl.org/ctic/infraestructuras/organizacion#Edificio">
+    <edge id="eid_rdfs:subClassOf58" source="nid_p-plan:Bundle" target="nid_p-plan:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1514,7 +1363,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf64" source="nid_base:ActoExpediente" target="nid_p-plan:Entity">
+    <edge id="eid_rdfs:subClassOf59" source="nid_base:ActoExpediente" target="nid_p-plan:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
