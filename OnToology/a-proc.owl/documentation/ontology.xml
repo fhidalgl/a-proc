@@ -958,7 +958,7 @@
         <foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hidalgo López</foaf:familyName>
         <foaf:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francisco José</foaf:givenName>
         <foaf:holdsAccount rdf:resource="http://purl.org/www.linkedin.com/in/franciscohidalgolopez"/>
-        <foaf:mbox rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fhidalgl@gmail.com</foaf:mbox>
+        <foaf:mbox rdf:resource="mailto:fhidalgl@gmail.com"/>
         <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francisco José Hidalgo López</foaf:name>
     </owl:NamedIndividual>
     

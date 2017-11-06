@@ -556,7 +556,7 @@
 <http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/familyName> "Hidalgo L\u00F3pez" .
 <http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/givenName> "Francisco Jos\u00E9" .
 <http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/holdsAccount> <http://purl.org/www.linkedin.com/in/franciscohidalgolopez> .
-<http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/mbox> "fhidalgl@gmail.com" .
+<http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/mbox> <mailto:fhidalgl@gmail.com> .
 <http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/name> "Francisco Jos\u00E9 Hidalgo L\u00F3pez" .
 # 
 # 
