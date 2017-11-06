@@ -614,7 +614,7 @@
           <http://xmlns.com/foaf/0.1/familyName> "Hidalgo López"^^xsd:string ;
           <http://xmlns.com/foaf/0.1/givenName> "Francisco José"^^xsd:string ;
           <http://xmlns.com/foaf/0.1/holdsAccount> <http://purl.org/www.linkedin.com/in/franciscohidalgolopez> ;
-          <http://xmlns.com/foaf/0.1/mbox> "fhidalgl@gmail.com"^^xsd:string ;
+          <http://xmlns.com/foaf/0.1/mbox> <mailto:fhidalgl@gmail.com> ;
           <http://xmlns.com/foaf/0.1/name> "Francisco José Hidalgo López"^^xsd:string .
 
 
