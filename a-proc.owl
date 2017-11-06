@@ -900,7 +900,7 @@
         <foaf:familyName>Hidalgo López</foaf:familyName>
         <foaf:givenName>Francisco José</foaf:givenName>
         <foaf:name>Francisco José Hidalgo López</foaf:name>
-        <foaf:mbox xml:lang="gmail.com">fhidalgl</foaf:mbox>
+        <foaf:mbox>fhidalgl@gmail.com</foaf:mbox>
         <foaf:holdsAccount rdf:resource="http://purl.org/www.linkedin.com/in/franciscohidalgolopez"/>
     </owl:NamedIndividual>
     
