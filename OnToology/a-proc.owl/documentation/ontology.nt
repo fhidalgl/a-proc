@@ -1,0 +1,640 @@
+<http://purl.org/a-proc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/a-proc> <http://www.w3.org/2002/07/owl#imports> <http://data.europa.eu/m8g/cpov> .
+<http://purl.org/a-proc> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ctic/infraestructuras/organizacion> .
+<http://purl.org/a-proc> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/net/p-plan#> .
+<http://purl.org/a-proc> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/vocab/cpsv> .
+<http://purl.org/a-proc> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf> .
+<http://purl.org/a-proc> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o-20130430> .
+<http://purl.org/a-proc> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/3.0/> .
+<http://purl.org/a-proc> <http://purl.org/dc/elements/1.1/creator> <http://purl.org/a-proc#fhidalgl> .
+<http://purl.org/a-proc> <http://purl.org/dc/elements/1.1/description> "Ontology created for the representation of administrative procedures"@en .
+<http://purl.org/a-proc> <http://purl.org/dc/elements/1.1/description> "Ontolog\u00EDa creada para la representaci\u00F3n de procedimientos administrativos"@es .
+<http://purl.org/a-proc> <http://purl.org/dc/elements/1.1/issued> "2017-10-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/a-proc> <http://purl.org/dc/elements/1.1/modified> "2017-10-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/a-proc> <http://purl.org/dc/elements/1.1/rights> "" .
+<http://purl.org/a-proc> <http://purl.org/dc/elements/1.1/title> "Administrative procedures"@en .
+<http://purl.org/a-proc> <http://purl.org/dc/elements/1.1/title> "Procedimientos administrativos"@es .
+<http://purl.org/a-proc> <http://vocab.org/vann/preferredNamespacePrefix> "a-proc" .
+<http://purl.org/a-proc> <http://vocab.org/vann/preferredNamespaceUri> "http://purl.org/a-proc#" .
+<http://purl.org/a-proc> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology created for the representation of administrative procedures"@en .
+<http://purl.org/a-proc> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontolog\u00EDa creada para la representaci\u00F3n de procedimientos administrativos"@es .
+<http://purl.org/a-proc> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
+# 
+# http://xmlns.com/foaf/0.1/familyName
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/holdsAccount
+<http://xmlns.com/foaf/0.1/holdsAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/a-proc#actionType
+<http://purl.org/a-proc#actionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/a-proc#actionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativeAction> .
+<http://purl.org/a-proc#actionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de acto administrativo"@es .
+<http://purl.org/a-proc#actionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of administrative act"@en .
+<http://purl.org/a-proc#actionType> <http://www.w3.org/2000/01/rdf-schema#label> "actionType" .
+<http://purl.org/a-proc#actionType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#addressee
+<http://purl.org/a-proc#addressee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/a-proc#addressee> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#OutputRegistryAnnotation> .
+<http://purl.org/a-proc#addressee> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/a-proc#addressee> <http://www.w3.org/2000/01/rdf-schema#comment> "Corresponde con la persona u organizaci\u00F3n a quien va destinado el asiento de salida"@es .
+<http://purl.org/a-proc#addressee> <http://www.w3.org/2000/01/rdf-schema#comment> "Corresponds to the person or organization to which the exit registration is intended"@en .
+<http://purl.org/a-proc#addressee> <http://www.w3.org/2000/01/rdf-schema#label> "addressee" .
+<http://purl.org/a-proc#addressee> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#destination
+<http://purl.org/a-proc#destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/a-proc#destination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#InputRegistryAnnotation> .
+<http://purl.org/a-proc#destination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Organization> .
+<http://purl.org/a-proc#destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Unidad de la organizaci\u00F3n a quien va dirigido el asiento de entrada"@es .
+<http://purl.org/a-proc#destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Unit of the organization to which the entry registration is directed"@en .
+<http://purl.org/a-proc#destination> <http://www.w3.org/2000/01/rdf-schema#label> "destination" .
+<http://purl.org/a-proc#destination> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#distributionType
+<http://purl.org/a-proc#distributionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/a-proc#distributionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#Distribute> .
+<http://purl.org/a-proc#distributionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de distribucion que se realiza sobre el asiento registral"@es .
+<http://purl.org/a-proc#distributionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of distribution that is made on the registration entry"@en .
+<http://purl.org/a-proc#distributionType> <http://www.w3.org/2000/01/rdf-schema#label> "distributionType" .
+<http://purl.org/a-proc#distributionType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#hasDocument
+<http://purl.org/a-proc#hasDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/a-proc#hasDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativeFile> .
+<http://purl.org/a-proc#hasDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#RegistryAnnotation> .
+<http://purl.org/a-proc#hasDocument> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/a-proc#Document> .
+<http://purl.org/a-proc#hasDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Document belonging to a record or registration"@en .
+<http://purl.org/a-proc#hasDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Documento que pertenece a un expediente o asiento registral"@es .
+<http://purl.org/a-proc#hasDocument> <http://www.w3.org/2000/01/rdf-schema#label> "hasDocument" .
+<http://purl.org/a-proc#hasDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#isProcedureOfPublicService
+<http://purl.org/a-proc#isProcedureOfPublicService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/a-proc#isProcedureOfPublicService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativeProcedure> .
+<http://purl.org/a-proc#isProcedureOfPublicService> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/cpsv#PublicService> .
+<http://purl.org/vocab/cpsv#PublicService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#isProcedureOfPublicService> <http://www.w3.org/2000/01/rdf-schema#comment> "Public service that is resolved by the procedure"@en .
+<http://purl.org/a-proc#isProcedureOfPublicService> <http://www.w3.org/2000/01/rdf-schema#comment> "Servicio publico que es resuelto por el procedimiento"@es .
+<http://purl.org/a-proc#isProcedureOfPublicService> <http://www.w3.org/2000/01/rdf-schema#label> "isProcedureOfPublicService" .
+<http://purl.org/a-proc#isProcedureOfPublicService> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#origin
+<http://purl.org/a-proc#origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/a-proc#origin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#OutputRegistryAnnotation> .
+<http://purl.org/a-proc#origin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Organization> .
+<http://purl.org/a-proc#origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Organizacion que remite el asiento de entrada"@es .
+<http://purl.org/a-proc#origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization that forwards the entry registration"@en .
+<http://purl.org/a-proc#origin> <http://www.w3.org/2000/01/rdf-schema#label> "origin" .
+<http://purl.org/a-proc#origin> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#phaseType
+<http://purl.org/a-proc#phaseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/a-proc#phaseType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#SubProceso> .
+<http://purl.org/a-proc#phaseType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de fase Administrativa"@es .
+<http://purl.org/a-proc#phaseType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of Administrative Phase"@en .
+<http://purl.org/a-proc#phaseType> <http://www.w3.org/2000/01/rdf-schema#label> "phaseType" .
+<http://purl.org/a-proc#phaseType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#sender
+<http://purl.org/a-proc#sender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/a-proc#sender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#InputRegistryAnnotation> .
+<http://purl.org/a-proc#sender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Person> .
+<http://purl.org/a-proc#sender> <http://www.w3.org/2000/01/rdf-schema#comment> "Person or company that sends the registration entry registration"@en .
+<http://purl.org/a-proc#sender> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona o empresa que remite el asiento registral del entrada"@es .
+<http://purl.org/a-proc#sender> <http://www.w3.org/2000/01/rdf-schema#label> "sender" .
+<http://purl.org/a-proc#sender> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#wasResolvedBy
+<http://purl.org/a-proc#wasResolvedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/a-proc#wasResolvedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+# 
+# http://purl.org/net/p-plan#isDecomposedAsPlan
+<http://purl.org/net/p-plan#isDecomposedAsPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#SubProceso> .
+<http://purl.org/net/p-plan#isDecomposedAsPlan> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/a-proc#AdministrativePhase> .
+# 
+# http://purl.org/net/p-plan#isPrecededBy
+<http://purl.org/net/p-plan#isPrecededBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativeAction> .
+<http://purl.org/net/p-plan#isPrecededBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#SubProceso> .
+<http://purl.org/net/p-plan#isPrecededBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/a-proc#AdministrativeAction> .
+<http://purl.org/net/p-plan#isPrecededBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/a-proc#SubProceso> .
+# 
+# http://purl.org/net/p-plan#isStepOfPlan
+<http://purl.org/net/p-plan#isStepOfPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativeAction> .
+<http://purl.org/net/p-plan#isStepOfPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#OrdinationAction> .
+<http://purl.org/net/p-plan#isStepOfPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#SubProceso> .
+<http://purl.org/net/p-plan#isStepOfPlan> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/a-proc#AdministrativePhase> .
+<http://purl.org/net/p-plan#isStepOfPlan> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/a-proc#AdministrativeProcedure> .
+# 
+# http://purl.org/net/p-plan#isSubPlanOfPlan
+<http://purl.org/net/p-plan#isSubPlanOfPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativePhase> .
+<http://purl.org/net/p-plan#isSubPlanOfPlan> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/a-proc#AdministrativeProcedure> .
+# 
+# http://www.w3.org/ns/prov#wasAttributedTo
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativeProcedure> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Organization> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/a-proc#actionId
+<http://purl.org/a-proc#actionId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/a-proc#actionId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativeAction> .
+<http://purl.org/a-proc#actionId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/a-proc#actionId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador del acto administrativo"@es .
+<http://purl.org/a-proc#actionId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the administrative act"@en .
+<http://purl.org/a-proc#actionId> <http://www.w3.org/2000/01/rdf-schema#label> "actionId" .
+# 
+# http://purl.org/a-proc#administrativeFileId
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativeFile> .
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#Communication> .
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#Document> .
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#DocumentationProvided> .
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#FileAction> .
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#FilePhase> .
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador del expediente en el sistema"@es .
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the administrative file in the system"@en .
+<http://purl.org/a-proc#administrativeFileId> <http://www.w3.org/2000/01/rdf-schema#label> "administrativeFileId" .
+# 
+# http://purl.org/a-proc#creationFileDate
+<http://purl.org/a-proc#creationFileDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/a-proc#creationFileDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativeFile> .
+<http://purl.org/a-proc#creationFileDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/a-proc#creationFileDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date on which a record or registration entry is created."@en .
+<http://purl.org/a-proc#creationFileDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que se crea un expediente o un asiento registral."@es .
+<http://purl.org/a-proc#creationFileDate> <http://www.w3.org/2000/01/rdf-schema#label> "creationFileDate" .
+# 
+# http://purl.org/a-proc#fechaRegistro
+<http://purl.org/a-proc#fechaRegistro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/a-proc#fechaRegistro> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#RegistryAnnotation> .
+<http://purl.org/a-proc#fechaRegistro> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/a-proc#fechaRegistro> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of the registration entry"@en .
+<http://purl.org/a-proc#fechaRegistro> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de la anotacion registral"@es .
+<http://purl.org/a-proc#fechaRegistro> <http://www.w3.org/2000/01/rdf-schema#label> "fechaRegistro"@es .
+# 
+# http://purl.org/a-proc#phaseId
+<http://purl.org/a-proc#phaseId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/a-proc#phaseId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativePhase> .
+<http://purl.org/a-proc#phaseId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/a-proc#phaseId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador de la fase administrativa"@es .
+<http://purl.org/a-proc#phaseId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the administrative phase"@en .
+<http://purl.org/a-proc#phaseId> <http://www.w3.org/2000/01/rdf-schema#label> "phaseId" .
+# 
+# http://purl.org/a-proc#procedureId
+<http://purl.org/a-proc#procedureId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/a-proc#procedureId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#AdministrativeProcedure> .
+<http://purl.org/a-proc#procedureId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/a-proc#procedureId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador del procedimiento administrativo"@es .
+<http://purl.org/a-proc#procedureId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the administrative procedure"@en .
+<http://purl.org/a-proc#procedureId> <http://www.w3.org/2000/01/rdf-schema#label> "procedureId" .
+# 
+# http://purl.org/a-proc#publicServiceId
+<http://purl.org/a-proc#publicServiceId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/a-proc#publicServiceId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://purl.org/a-proc#publicServiceId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/a-proc#publicServiceId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador del procedimiento o servicio ofrecido por una Administraci\u00F3n P\u00FAblica."@es .
+<http://purl.org/a-proc#publicServiceId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the procedure or service offered by a Public Administration."@en .
+<http://purl.org/a-proc#publicServiceId> <http://www.w3.org/2000/01/rdf-schema#label> "publicServiceId" .
+# 
+# http://purl.org/a-proc#registryAnnotationId
+<http://purl.org/a-proc#registryAnnotationId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/a-proc#registryAnnotationId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#RegistryAnnotation> .
+<http://purl.org/a-proc#registryAnnotationId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/a-proc#registryAnnotationId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador del asiento registral"@es .
+<http://purl.org/a-proc#registryAnnotationId> <http://www.w3.org/2000/01/rdf-schema#comment> "Registry identifier"@en .
+<http://purl.org/a-proc#registryAnnotationId> <http://www.w3.org/2000/01/rdf-schema#label> "registryAnnotationId" .
+# 
+# http://purl.org/a-proc#summary
+<http://purl.org/a-proc#summary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/a-proc#summary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/a-proc#RegistryAnnotation> .
+<http://purl.org/a-proc#summary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/a-proc#summary> <http://www.w3.org/2000/01/rdf-schema#comment> "Resumen del asiento registral"@es .
+<http://purl.org/a-proc#summary> <http://www.w3.org/2000/01/rdf-schema#comment> "Summary of the registry office"@en .
+<http://purl.org/a-proc#summary> <http://www.w3.org/2000/01/rdf-schema#label> "summary" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/a-proc#AdministrativeAction
+<http://purl.org/a-proc#AdministrativeAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#AdministrativeAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Step> .
+<http://purl.org/a-proc#AdministrativeAction> <http://www.w3.org/2000/01/rdf-schema#comment> "An administrative act is any unilateral declaration of will performed in the exercise of the administrative function that produces individual legal effects immediately"@en .
+<http://purl.org/a-proc#AdministrativeAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Un acto administrativo es toda declaraci\u00F3n unilateral de voluntad realizada en el ejercicio de la funci\u00F3n administrativa que produce efectos jur\u00EDdicos individuales de forma inmediata"@es .
+<http://purl.org/a-proc#AdministrativeAction> <http://www.w3.org/2000/01/rdf-schema#label> "AdministrativeAction" .
+<http://purl.org/a-proc#AdministrativeAction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#AdministrativeFile
+<http://purl.org/a-proc#AdministrativeFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#AdministrativeFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Entity> .
+<http://purl.org/a-proc#AdministrativeFile> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la materializaci\u00F3n del procedimiento administrativo y que consiste en el conjunto ordenado de documentos y actuaciones que sirven de antecedentes y fundamentan la resoluci\u00F3n administrativa, as\u00ED como las diligencias dirigidas a su ejecuci\u00F3n."@es .
+<http://purl.org/a-proc#AdministrativeFile> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the materialization of the administrative procedure and consists of the ordered set of documents and actions that serve as background and base the administrative decision, as well as the steps directed at its execution."@en .
+<http://purl.org/a-proc#AdministrativeFile> <http://www.w3.org/2000/01/rdf-schema#label> "AdministrativeFile" .
+<http://purl.org/a-proc#AdministrativeFile> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#AdministrativePhase
+<http://purl.org/a-proc#AdministrativePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#AdministrativePhase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Plan> .
+<http://purl.org/a-proc#AdministrativePhase> <http://www.w3.org/2000/01/rdf-schema#comment> "An administrative phase is each of the elements in which it is structured in administrative procedure"@en .
+<http://purl.org/a-proc#AdministrativePhase> <http://www.w3.org/2000/01/rdf-schema#comment> "Una fase administrativa es cada uno de los elementos en los que se estructura en procedimiento administrativo"@es .
+<http://purl.org/a-proc#AdministrativePhase> <http://www.w3.org/2000/01/rdf-schema#label> "AdministrativePhase" .
+<http://purl.org/a-proc#AdministrativePhase> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#AdministrativeProcedure
+<http://purl.org/a-proc#AdministrativeProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#AdministrativeProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Plan> .
+<http://purl.org/a-proc#AdministrativeProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "El conjunto ordenado de tr\u00E1mites y actuaciones normalmente realizadas, seg\u00FAn el cauce legalmente previsto, para dictar un acto administrativo o expresar la voluntad de la Administraci\u00F3n"@es .
+<http://purl.org/a-proc#AdministrativeProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "The ordered set of procedures and actions normally carried out, according to the legally provided channel, to issue an administrative act or express the will of the Administration"@en .
+<http://purl.org/a-proc#AdministrativeProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "AdministrativeProcedure" .
+<http://purl.org/a-proc#AdministrativeProcedure> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#Communication
+<http://purl.org/a-proc#Communication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#Communication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Entity> .
+<http://purl.org/a-proc#Communication> <http://www.w3.org/2000/01/rdf-schema#comment> "A communication is the procedural procedure by which the competent administrative body informs the interested party or interested in an administrative Resolution or agreement"@en .
+<http://purl.org/a-proc#Communication> <http://www.w3.org/2000/01/rdf-schema#comment> "Una comunicaci\u00F3n es el tr\u00E1mite procedimental mediante el cual el \u00F3rgano administrativo competente informa al interesado o interesados en una Resoluci\u00F3n o acuerdo administrativos"@es .
+<http://purl.org/a-proc#Communication> <http://www.w3.org/2000/01/rdf-schema#label> "Communication" .
+<http://purl.org/a-proc#Communication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#CreateAction
+<http://purl.org/a-proc#CreateAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#CreateAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Activity> .
+<http://purl.org/a-proc#CreateAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad por la que se crea un acto administrativo en el contexto de la fase de un expediente."@es .
+<http://purl.org/a-proc#CreateAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity by which an administrative act is created in the context of the phase of a file."@en .
+<http://purl.org/a-proc#CreateAction> <http://www.w3.org/2000/01/rdf-schema#label> "CreateAction" .
+<http://purl.org/a-proc#CreateAction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#CreateDocument
+<http://purl.org/a-proc#CreateDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#CreateDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Activity> .
+<http://purl.org/a-proc#CreateDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad por la que se crea un nuevo documento en un expediente"@es .
+<http://purl.org/a-proc#CreateDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity by which a new document is created in an administrative file"@en .
+<http://purl.org/a-proc#CreateDocument> <http://www.w3.org/2000/01/rdf-schema#label> "CreateDocument" .
+<http://purl.org/a-proc#CreateDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#CreateFile
+<http://purl.org/a-proc#CreateFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#CreateFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Activity> .
+<http://purl.org/a-proc#CreateFile> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad por la que se genera un nuevo expediente"@es .
+<http://purl.org/a-proc#CreateFile> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity for which a new administrative file is created"@en .
+<http://purl.org/a-proc#CreateFile> <http://www.w3.org/2000/01/rdf-schema#label> "CreateFile" .
+<http://purl.org/a-proc#CreateFile> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#CreatePhase
+<http://purl.org/a-proc#CreatePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#CreatePhase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Activity> .
+<http://purl.org/a-proc#CreatePhase> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad por la que se crea una fase en el contexto de un expediente"@es .
+<http://purl.org/a-proc#CreatePhase> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity by which a new phase is created in the context of an administrative file"@en .
+<http://purl.org/a-proc#CreatePhase> <http://www.w3.org/2000/01/rdf-schema#label> "CreatePhase" .
+<http://purl.org/a-proc#CreatePhase> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#Distribute
+<http://purl.org/a-proc#Distribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#Distribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Activity> .
+<http://purl.org/a-proc#Distribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad por la que se distribuye un asiento registral entre diferentes oficinas de registro"@es .
+<http://purl.org/a-proc#Distribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity by which a registration entry is distributed between different registration offices"@en .
+<http://purl.org/a-proc#Distribute> <http://www.w3.org/2000/01/rdf-schema#label> "Distribute" .
+<http://purl.org/a-proc#Distribute> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#Document
+<http://purl.org/a-proc#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Entity> .
+<http://purl.org/a-proc#Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Cada uno de los documentos generados en la actuaci\u00F3n administrativa."@es .
+<http://purl.org/a-proc#Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the documents generated in the administrative action."@en .
+<http://purl.org/a-proc#Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document" .
+<http://purl.org/a-proc#Document> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#DocumentationProvided
+<http://purl.org/a-proc#DocumentationProvided> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#DocumentationProvided> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Entity> .
+<http://purl.org/a-proc#DocumentationProvided> <http://www.w3.org/2000/01/rdf-schema#comment> "Cada uno de los documentos aportados por el ciudadano en el inicio del tr\u00E1mite o en aportaciones posteriores de documentaci\u00F3n."@es .
+<http://purl.org/a-proc#DocumentationProvided> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the documents provided by the citizen at the beginning of the process or in subsequent contributions of documentation."@en .
+<http://purl.org/a-proc#DocumentationProvided> <http://www.w3.org/2000/01/rdf-schema#label> "DocumentationProvided" .
+<http://purl.org/a-proc#DocumentationProvided> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#FileAction
+<http://purl.org/a-proc#FileAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#FileAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Entity> .
+<http://purl.org/a-proc#FileAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Cada uno de las actuaciones administrativas realizadas en una fase de un expediente. Se corresponde con un ActoAdministrativo."@es .
+<http://purl.org/a-proc#FileAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the administrative actions carried out in one phase of an administrative file."@en .
+<http://purl.org/a-proc#FileAction> <http://www.w3.org/2000/01/rdf-schema#label> "FileAction" .
+<http://purl.org/a-proc#FileAction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#FilePhase
+<http://purl.org/a-proc#FilePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#FilePhase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Entity> .
+<http://purl.org/a-proc#FilePhase> <http://www.w3.org/2000/01/rdf-schema#comment> "Cada una de las fases instanciadas en un expedientes. Se corresponde con una FaseAdministrativa."@es .
+<http://purl.org/a-proc#FilePhase> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the phases instantiated in an administrative file."@en .
+<http://purl.org/a-proc#FilePhase> <http://www.w3.org/2000/01/rdf-schema#label> "FilePhase" .
+<http://purl.org/a-proc#FilePhase> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#InputRegistryAnnotation
+<http://purl.org/a-proc#InputRegistryAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#InputRegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/a-proc#RegistryAnnotation> .
+<http://purl.org/a-proc#InputRegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotation corresponding to the entry of documentation in the organization"@en .
+<http://purl.org/a-proc#InputRegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Anotacion correspondiente a la entrada de documentaci\u00F3n en la organizaci\u00F3n"@es .
+<http://purl.org/a-proc#InputRegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "InputRegistryAnnotation" .
+<http://purl.org/a-proc#InputRegistryAnnotation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#OrdinationAction
+<http://purl.org/a-proc#OrdinationAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#OrdinationAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/a-proc#AdministrativeAction> .
+<http://purl.org/a-proc#OrdinationAction> <http://www.w3.org/2000/01/rdf-schema#comment> "It is considered an act of ordination that act that can be instantiated at any time of the processing of a file."@en .
+<http://purl.org/a-proc#OrdinationAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Se considera un acto de ordenaci\u00F3n aquel acto que puede ser instanciado en cualquier momento de la tramitaci\u00F3n de un expediente."@es .
+<http://purl.org/a-proc#OrdinationAction> <http://www.w3.org/2000/01/rdf-schema#label> "OrdinationAction" .
+<http://purl.org/a-proc#OrdinationAction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#OutputRegistryAnnotation
+<http://purl.org/a-proc#OutputRegistryAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#OutputRegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/a-proc#RegistryAnnotation> .
+<http://purl.org/a-proc#OutputRegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotation corresponding to the output of documentation in the organization"@en .
+<http://purl.org/a-proc#OutputRegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Anotacion correspondiente a la salida de documentaci\u00F3n en la organizaci\u00F3n"@es .
+<http://purl.org/a-proc#OutputRegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "OutputRegistryAnnotation" .
+<http://purl.org/a-proc#OutputRegistryAnnotation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#PerformComunication
+<http://purl.org/a-proc#PerformComunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#PerformComunication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Activity> .
+<http://purl.org/a-proc#PerformComunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad por la que se crea una comunicaci\u00F3n con destino a un ciudadano."@es .
+<http://purl.org/a-proc#PerformComunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity that creates a communication destined to a citizen."@en .
+<http://purl.org/a-proc#PerformComunication> <http://www.w3.org/2000/01/rdf-schema#label> "PerformComunication" .
+<http://purl.org/a-proc#PerformComunication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#ProvideDocumentation
+<http://purl.org/a-proc#ProvideDocumentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#ProvideDocumentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Activity> .
+<http://purl.org/a-proc#ProvideDocumentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad por la que se relaciona un documento aportado por un ciudadano a un expediente administrativo"@es .
+<http://purl.org/a-proc#ProvideDocumentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity relating to a document submitted by a citizen to an administrative file"@en .
+<http://purl.org/a-proc#ProvideDocumentation> <http://www.w3.org/2000/01/rdf-schema#label> "ProvideDocumentation" .
+<http://purl.org/a-proc#ProvideDocumentation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#Register
+<http://purl.org/a-proc#Register> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#Register> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Activity> .
+<http://purl.org/a-proc#Register> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad por la que se registra un documento o solicitud de un ciudadano dando entrada en la administraci\u00F3n"@es .
+<http://purl.org/a-proc#Register> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity by which a document or request of a citizen is registered giving entrance in the administration"@en .
+<http://purl.org/a-proc#Register> <http://www.w3.org/2000/01/rdf-schema#label> "Register" .
+<http://purl.org/a-proc#Register> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#RegistryAnnotation
+<http://purl.org/a-proc#RegistryAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#RegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Entity> .
+<http://purl.org/a-proc#RegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad que consiste en una anotaci\u00F3n en el libro de registro. Puede ser de entrada o de salida."@es .
+<http://purl.org/a-proc#RegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity consisting of an annotation in the registry book. It can be input or output."@en .
+<http://purl.org/a-proc#RegistryAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "RegistryAnnotation" .
+<http://purl.org/a-proc#RegistryAnnotation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/a-proc#SubProceso
+<http://purl.org/a-proc#SubProceso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/a-proc#SubProceso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#MultiStep> .
+<http://purl.org/a-proc#SubProceso> <http://www.w3.org/2000/01/rdf-schema#comment> "A subprocess is used to link a procedure with its phases or a metaprocedure with its procedures."@en .
+<http://purl.org/a-proc#SubProceso> <http://www.w3.org/2000/01/rdf-schema#comment> "Un subproceso se utiliza para enlazar un procedimento con sus fases o un metaprocedimiento con sus procedimientos."@es .
+<http://purl.org/a-proc#SubProceso> <http://www.w3.org/2000/01/rdf-schema#label> "SubProceso"@es .
+<http://purl.org/a-proc#SubProceso> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# http://purl.org/vocab/cpsv#PublicService
+<http://purl.org/vocab/cpsv#PublicService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/p-plan#Plan> .
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/a-proc
+<http://purl.org/a-proc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# http://purl.org/a-proc#esquemaEstadosDist
+<http://purl.org/a-proc#esquemaEstadosDist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaEstadosDist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/a-proc#esquemaEstadosDist> <http://www.w3.org/2000/01/rdf-schema#comment> "Taxonom\u00EDa para los posibles estados de distribuci\u00F3n de un asiento registral"@es .
+# 
+# http://purl.org/a-proc#esquemaEstadosDist-1
+<http://purl.org/a-proc#esquemaEstadosDist-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaEstadosDist-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/a-proc#esquemaEstadosDist-1> <http://www.w3.org/2000/01/rdf-schema#label> "Dstribuited"@en .
+<http://purl.org/a-proc#esquemaEstadosDist-1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://purl.org/a-proc#esquemaEstadosDist> .
+# 
+# http://purl.org/a-proc#esquemaEstadosDist-2
+<http://purl.org/a-proc#esquemaEstadosDist-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaEstadosDist-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/a-proc#esquemaEstadosDist-2> <http://www.w3.org/2000/01/rdf-schema#label> "Accepted"@en .
+<http://purl.org/a-proc#esquemaEstadosDist-2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://purl.org/a-proc#esquemaEstadosDist> .
+# 
+# http://purl.org/a-proc#esquemaTipoActo
+<http://purl.org/a-proc#esquemaTipoActo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoActo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/a-proc#esquemaTipoActo> <http://www.w3.org/2000/01/rdf-schema#label> "Taxonomy of the actions of an administrative procedure"@en .
+# 
+# http://purl.org/a-proc#esquemaTipoActo-1
+<http://purl.org/a-proc#esquemaTipoActo-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoActo-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/a-proc#esquemaTipoActo-1> <http://www.w3.org/2000/01/rdf-schema#label> "Resolution action"@en .
+<http://purl.org/a-proc#esquemaTipoActo-1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://purl.org/a-proc#esquemaTipoActo> .
+# 
+# http://purl.org/a-proc#esquemaTipoActo-2
+<http://purl.org/a-proc#esquemaTipoActo-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoActo-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/a-proc#esquemaTipoActo-2> <http://www.w3.org/2000/01/rdf-schema#label> "Resolution proposal"@en .
+<http://purl.org/a-proc#esquemaTipoActo-2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://purl.org/a-proc#esquemaTipoActo> .
+# 
+# http://purl.org/a-proc#esquemaTipoActo-3
+<http://purl.org/a-proc#esquemaTipoActo-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoActo-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/a-proc#esquemaTipoActo-3> <http://www.w3.org/2000/01/rdf-schema#label> "Notification"@en .
+<http://purl.org/a-proc#esquemaTipoActo-3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://purl.org/a-proc#esquemaTipoActo> .
+# 
+# http://purl.org/a-proc#esquemaTipoDocumento-1
+<http://purl.org/a-proc#esquemaTipoDocumento-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoDocumento-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/a-proc#esquemaTipoDocumento-1> <http://www.w3.org/2000/01/rdf-schema#label> "Application form"@en .
+<http://purl.org/a-proc#esquemaTipoDocumento-1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://purl.org/a-proc#esquemaTipoDocumentoExterno> .
+# 
+# http://purl.org/a-proc#esquemaTipoDocumento-2
+<http://purl.org/a-proc#esquemaTipoDocumento-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoDocumento-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/a-proc#esquemaTipoDocumento-2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://purl.org/a-proc#esquemaTipoDocumentoExterno> .
+# 
+# http://purl.org/a-proc#esquemaTipoDocumentoExterno
+<http://purl.org/a-proc#esquemaTipoDocumentoExterno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoDocumentoExterno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/a-proc#esquemaTipoDocumentoExterno> <http://www.w3.org/2000/01/rdf-schema#label> "Taxonomy of the document types from citizens"@en .
+# 
+# http://purl.org/a-proc#esquemaTipoDocumentoInterno
+<http://purl.org/a-proc#esquemaTipoDocumentoInterno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoDocumentoInterno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/a-proc#esquemaTipoDocumentoInterno> <http://www.w3.org/2000/01/rdf-schema#label> "Taxonomy of the internal documents of the organization"@en .
+# 
+# http://purl.org/a-proc#esquemaTipoFase
+<http://purl.org/a-proc#esquemaTipoFase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoFase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/a-proc#esquemaTipoFase> <http://www.w3.org/2000/01/rdf-schema#label> "Taxonomy of the phases of an administrative procedure"@en .
+# 
+# http://purl.org/a-proc#esquemaTipoFase-1
+<http://purl.org/a-proc#esquemaTipoFase-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoFase-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/a-proc#esquemaTipoFase-1> <http://www.w3.org/2000/01/rdf-schema#label> "Start phase"@en .
+<http://purl.org/a-proc#esquemaTipoFase-1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://purl.org/a-proc#esquemaTipoFase> .
+<http://purl.org/a-proc#esquemaTipoFase-1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Start phase"@en .
+# 
+# http://purl.org/a-proc#esquemaTipoFase-2
+<http://purl.org/a-proc#esquemaTipoFase-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#esquemaTipoFase-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/a-proc#esquemaTipoFase-2> <http://www.w3.org/2000/01/rdf-schema#label> "Termination phase"@en .
+<http://purl.org/a-proc#esquemaTipoFase-2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://purl.org/a-proc#esquemaTipoFase> .
+<http://purl.org/a-proc#esquemaTipoFase-2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Termination phase"@en .
+# 
+# http://purl.org/a-proc#fhidalgl
+<http://purl.org/a-proc#fhidalgl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/a-proc#fhidalgl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/familyName> "Hidalgo L\u00F3pez" .
+<http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/givenName> "Francisco Jos\u00E9" .
+<http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/holdsAccount> <http://purl.org/www.linkedin.com/in/franciscohidalgolopez> .
+<http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/mbox> <mailto:fhidalgl@gmail.com> .
+<http://purl.org/a-proc#fhidalgl> <http://xmlns.com/foaf/0.1/name> "Francisco Jos\u00E9 Hidalgo L\u00F3pez" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#AdministrativeFile> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#Communication> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#Document> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#DocumentationProvided> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#FileAction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#FilePhase> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#RegistryAnnotation> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid9 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaEstadosDist> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaEstadosDist-1> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaEstadosDist-2> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoActo> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoActo-1> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoActo-2> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoActo-3> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoDocumento-1> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoDocumento-2> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoDocumentoExterno> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoDocumentoInterno> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoFase> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoFase-1> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/a-proc#esquemaTipoFase-2> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
